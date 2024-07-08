@@ -1,6 +1,9 @@
 import express from "express";
 import mongoose from "mongoose";
 import bookRoute from "./routes/book.route.js";
+import userRoute from "./routes/user.route.js";
+import dotenv from 'dotenv';
+
 
 const app = express();
 
@@ -9,9 +12,12 @@ app.use(express.urlencoded({ extended: false }));
 
 
 app.use("/api/books", bookRoute);
+app.use("/api/users", userRoute);
+
+
 
 mongoose
-  .connect("mongodb+srv://akshaycs0480:5cdsE66cOEBkQZbq@bookdb.1ka6a2u.mongodb.net/")
+  .connect("mongodb+srv://akshaycs0480:5cdsE66cOEBkQZbq@bookdb.1ka6a2u.mongodb.net/BooksDB")
   .then(() => {
     console.log("Connected to database!");
     app.listen(3000, () => {
@@ -21,3 +27,7 @@ mongoose
   .catch((error) => {
     console.log("Connection failed!", error);
   });
+
+
+
+  
