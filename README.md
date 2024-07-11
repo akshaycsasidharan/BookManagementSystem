@@ -37,11 +37,11 @@
    Register a new user:<br>
    &nbsp;&nbsp;Send a POST request to /api/users/register with the following JSON body:
    <br>
-    { <br>
+     &nbsp;&nbsp;{ <br>
      &nbsp;&nbsp;"username": "your_username", <br>
       &nbsp;&nbsp;"password": "your_password", <br>
       &nbsp;&nbsp;"email": "your_email" <br>
-    } <br>
+     &nbsp;&nbsp;} <br>
 
    **Login as an existing user:** <br>
       &nbsp;&nbsp;Send a POST request to /api/users/login with the following JSON body: <br>
