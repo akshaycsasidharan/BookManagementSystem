@@ -35,24 +35,24 @@
 
 ## How to Use the Project
    **Register a new user:**
-      **Send a POST request to /api/users/register with the following JSON body:**
+     Send a POST request to /api/users/register with the following JSON body:
    <br>
-   **{** <br>
-     **"username": "your_username",** <br>
-     **"password": "your_password",** <br>
-     **"email": "your_email"** <br>
-   **}** <br>
+   { <br>
+     **"username":** "your_username", <br>
+     **"password":** "your_password",** <br>
+     **"email":** "your_email"** <br>
+   } <br>
 
-   **Login as an existing user: <br>
-      **Send a POST request to /api/users/login with the following JSON body: <br>
-   **{ <br>
-     **"username": "your_username", <br>
-     **"password": "your_password" <br>
-   **} <br>
+   **Login as an existing user:** <br>
+     Send a POST request to /api/users/login with the following JSON body: <br>
+   { <br>
+     **"username":** "your_username", <br>
+     **"password":** "your_password" <br>
+   } <br>
    This will return a JWT token to be used for authenticated requests. <br>
 
   Authenticated Requests: <br>
-  **Include the JWT token in the Authorization header of your requests, prefixed with Bearer . <br>
+  Include the JWT token in the Authorization header of your requests, prefixed with Bearer . <br>
 
 ## API Documentation
  ## User Authentication <br>
