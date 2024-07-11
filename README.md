@@ -2,10 +2,10 @@
 
 
 ## Project Title
-   Book Management System API
+  &nbsp;&nbsp; Book Management System API
 
 ## Project Description
-   This project is a RESTful API server that allows authenticated users to manage a collection of books. The API supports CRUD (Create, Read, Update, Delete) operations on books, search functionality by book        title or author, and user authentication via registration and login. It is built using Node.js, Express, MongoDB, and JWT tokens.
+  &nbsp;&nbsp; This project is a RESTful API server that allows authenticated users to manage a collection of books. The API supports CRUD (Create, Read, Update, Delete) operations on books, search functionality by book        title or author, and user authentication via registration and login. It is built using Node.js, Express, MongoDB, and JWT tokens.
 
 ## Table of Contents
 1. [Project Title](#project-title)
@@ -17,21 +17,21 @@
 
 
 ## How to Install and Run the Project
-1. **Clone the repository:** 
-  git clone https://github.com/yourusername/BookManagementSystem.git
+&nbsp;&nbsp; **Clone the repository:** 
+ &nbsp;&nbsp; git clone https://github.com/yourusername/BookManagementSystem.git
   cd BookManagementSystem
 
 ## Install the dependencies:
-  npm install
+ &nbsp;&nbsp; npm install
 
 ## Set up environment variables:
-  Create a .env file in the root directory and add the following environment variables:<br>
-  MONGO_URI=your_mongodb_uri <br>
-  DB=your_database_name <br>
-  JWT_SECRET=your_jwt_secret
+  &nbsp;&nbsp;Create a .env file in the root directory and add the following environment variables:<br>
+  &nbsp;&nbsp;MONGO_URI=your_mongodb_uri <br>
+  &nbsp;&nbsp;DB=your_database_name <br>
+ &nbsp;&nbsp; JWT_SECRET=your_jwt_secret
 
 ## Run the project:
-   npm start
+  &nbsp;&nbsp; npm start
 
 ## How to Use the Project
    Register a new user:<br>
@@ -45,10 +45,10 @@
 
    **Login as an existing user:** <br>
       &nbsp;&nbsp;Send a POST request to /api/users/login with the following JSON body: <br>
-    { <br>
+     &nbsp;&nbsp;{ <br>
       &nbsp;&nbsp;"username": "your_username", <br>
       &nbsp;&nbsp;"password": "your_password" <br>
-    } <br>
+     &nbsp;&nbsp;} <br>
    This will return a JWT token to be used for authenticated requests. <br>
 
   Authenticated Requests: <br>
@@ -56,121 +56,121 @@
 
 ## API Documentation
  ## User Authentication <br>
-   Register <br>
-      Endpoint: /api/users/register<br>
-      Method: POST<br>
-      Request Body: <br>
-      { <br>
-        "username": "string", <br>
-        "password": "string", <br>
-        "email": "string" <br>
-      }
+   **Register** <br>
+     &nbsp;&nbsp;**Endpoint:** /api/users/register<br>
+     &nbsp;&nbsp;**Method:** POST<br>
+     &nbsp;&nbsp;**Request Body:** <br>
+      &nbsp;&nbsp;{ <br>
+        &nbsp;&nbsp;"username": "string", <br>
+         &nbsp;&nbsp;"password": "string", <br>
+         &nbsp;&nbsp;"email": "string" <br>
+      &nbsp;&nbsp;}
       <br>
-      Response: <br>
-      { <br>
-        "message": "User registered successfully", <br>
-        "token": "JWT token" <br>
-      }  <br>
+      &nbsp;&nbsp;**Response:** <br>
+     &nbsp;&nbsp; { <br>
+         &nbsp;&nbsp;"message": "User registered successfully", <br>
+         &nbsp;&nbsp;"token": "JWT token" <br>
+      &nbsp;&nbsp;}  <br>
 
-   Login  <br>
-      Endpoint: /api/users/login<br>
-      Method: POST<br>
-      Request Body:<br>
-      { <br>
-        "username": "string", <br>
-        "password": "string" <br>
-      } <br>
-      Response: <br>
-      { <br>
-        "message": "Login successfully", <br>
-        "token": "JWT token" <br>
-      } <br>
+   **Login**  <br>
+      &nbsp;&nbsp;**Endpoint:** /api/users/login<br>
+      &nbsp;&nbsp;**Method:** POST<br>
+      &nbsp;&nbsp;**Request Body:**<br>
+      &nbsp;&nbsp;{ <br>
+         &nbsp;&nbsp;"username": "string", <br>
+         &nbsp;&nbsp;"password": "string" <br>
+      &nbsp;&nbsp;} <br>
+      &nbsp;&nbsp;**Response:** <br>
+      &nbsp;&nbsp;{ <br>
+         &nbsp;&nbsp;"message": "Login successfully", <br>
+         &nbsp;&nbsp;"token": "JWT token" <br>
+      &nbsp;&nbsp;} <br>
 
 ## Books CRUD Operations (Secured with JWT)
-   Create <br>
-      Endpoint: /api/books <br>
-      Method: POST <br>
-      Request Headers: <br>
-      Authorization: Bearer JWT token <br>
-      Request Body: <br>
-      { <br>
-        "Title": "string", <br>
-        "Author": "string", <br>
-        "Genre": "string", <br>
-        "PublishedYear": "number", <br>
-        "Requirements": "string" <br>
-      } <br>
-      Response: <br>
-      { <br>
-        "message": "Book created successfully", <br>
-        "book": { ... } <br>
-      } <br>
+   **Create** <br>
+      &nbsp;&nbsp;**Endpoint:** /api/books <br>
+      &nbsp;&nbsp;**Method:** POST <br>
+     &nbsp;&nbsp;**Request Headers:** <br>
+      &nbsp;&nbsp;**Authorization:** Bearer JWT token <br>
+      &nbsp;&nbsp;**Request Body:** <br>
+      &nbsp;&nbsp;{ <br>
+         &nbsp;&nbsp;"Title": "string", <br>
+         &nbsp;&nbsp;"Author": "string", <br>
+         &nbsp;&nbsp;"Genre": "string", <br>
+         &nbsp;&nbsp;"PublishedYear": "number", <br>
+         &nbsp;&nbsp;"Requirements": "string" <br>
+      &nbsp;&nbsp;} <br>
+      &nbsp;&nbsp;**Response:** <br>
+     &nbsp;&nbsp; { <br>
+         &nbsp;&nbsp;"message": "Book created successfully", <br>
+         &nbsp;&nbsp;"book": { ... } <br>
+      &nbsp;&nbsp;} <br>
 
-   Read <br>
-      Get all books <br>
+   **Read** <br>
+      &nbsp;&nbsp;**Get all books** <br>
       <br>
-      Endpoint: /api/books<br>
-      Method: GET<br>
-      Request Headers:<br>
-      Authorization: Bearer JWT token
-      Response:
+      &nbsp;&nbsp;**Endpoint:** /api/books<br>
+      &nbsp;&nbsp;**Method:** GET<br>
+      &nbsp;&nbsp;**Request Headers:**<br>
+      &nbsp;&nbsp;**Authorization:** Bearer JWT token
+      &nbsp;&nbsp;**Response:**
       <br>
-      { <br>
-        "books": [ ... ] <br>
-      } <br>
+      &nbsp;&nbsp;{ <br>
+         &nbsp;&nbsp;"books": [ ... ] <br>
+      &nbsp;&nbsp;} <br>
    
-   Get a book by ID <br>
-      Endpoint: /api/books/:id<br>
-      Method: GET<br>
-      Request Headers: <br>
-      Authorization: Bearer JWT token <br>
-      Response:
+   **Get a book by ID** <br>
+      &nbsp;&nbsp;**Endpoint:** /api/books/:id<br>
+      &nbsp;&nbsp;**Method:** GET<br>
+      &nbsp;&nbsp;**Request Headers:** <br>
+      &nbsp;&nbsp;**Authorization:** Bearer JWT token <br>
+      &nbsp;&nbsp;**Response:**
       <br>
-      { <br>
-        "book": { ... } <br>
-      } <br>
+      &nbsp;&nbsp;{ <br>
+         &nbsp;&nbsp;"book": { ... } <br>
+      &nbsp;&nbsp;} <br>
       
-   Search books by title or author <br>
+   **Search books by title or author** <br>
     <br>
-      Endpoint: /api/books/search<br>
-      Method: GET<br>
-      Request Headers:<br>
-      Authorization: Bearer JWT token <br>
-      Query Parameters:
+      &nbsp;&nbsp;**Endpoint:** /api/books/search<br>
+      &nbsp;&nbsp;**Method:** GET<br>
+      &nbsp;&nbsp;**Request Headers:**<br>
+      &nbsp;&nbsp;**Authorization:** Bearer JWT token <br>
+      &nbsp;&nbsp;**Query Parameters:**
       <br>
-      query: searchTerm<br>
-      Response: 
+      &nbsp;&nbsp;**query:** searchTerm<br>
+      &nbsp;&nbsp;**Response:** 
       <br>
-      { <br>
-        "books": [ ... ] <br>
-      } <br>
+      &nbsp;&nbsp;{ <br>
+         &nbsp;&nbsp;"books": [ ... ] <br>
+      &nbsp;&nbsp;} <br>
    
-   Update <br>
-      Endpoint: /api/books/:id<br>
-      Method: PUT<br>
-      Request Headers:
+   **Update** <br>
+      &nbsp;&nbsp;**Endpoint:** /api/books/:id<br>
+      &nbsp;&nbsp;**Method:** PUT<br>
+      &nbsp;&nbsp;**Request Headers:**
       <br>
-      Authorization: Bearer JWT token <br>
-      Request Body: <br>
-      { <br>
-        "Title": "string", <br>
-        "Author": "string", <br>
-        "Genre": "string", <br>
-        "PublishedYear": "number", <br>
-        "Requirements": "string" <br>
-      } <br>
-      Response: <br>
-      { <br>
-        "message": "Book updated successfully", <br>
-        "book": { ... } <br>
-      } <br>
+      &nbsp;&nbsp;**Authorization:** Bearer JWT token <br>
+      &nbsp;&nbsp;**Request Body:** <br>
+      &nbsp;&nbsp;{ <br>
+         &nbsp;&nbsp;"Title": "string", <br>
+         &nbsp;&nbsp;"Author": "string", <br>
+         &nbsp;&nbsp;"Genre": "string", <br>
+         &nbsp;&nbsp;"PublishedYear": "number", <br>
+         &nbsp;&nbsp;"Requirements": "string" <br>
+      &nbsp;&nbsp;} <br>
+      &nbsp;&nbsp;**Response:** <br>
+      &nbsp;&nbsp;{ <br>
+         &nbsp;&nbsp;"message": "Book updated successfully", <br>
+         &nbsp;&nbsp;"book": { ... } <br>
+      &nbsp;&nbsp;} <br>
    
-   Delete <br>
-      Endpoint: /api/books/:id <br>
-      Method: DELETE <br>
-      Request Headers: <br>
-      Authorization: Bearer JWT token <br>
-      Response: <br>
-      { <br>
-        "message": "Book deleted successfully" <br>
-      } <br>
+   **Delete** <br>
+      &nbsp;&nbsp;**Endpoint:** /api/books/:id <br>
+      &nbsp;&nbsp;**Method:** DELETE <br>
+      &nbsp;&nbsp;**Request Headers:** <br>
+      &nbsp;&nbsp;**Authorization:** Bearer JWT token <br>
+      &nbsp;&nbsp;**Response:** <br>
+      &nbsp;&nbsp;{ <br>
+         &nbsp;&nbsp;"message": "Book deleted successfully" <br>
+      &nbsp;&nbsp;} <br>
