@@ -55,7 +55,7 @@ Book Management System API
   Include the JWT token in the Authorization header of your requests, prefixed with Bearer . <br>
 
 ## API Documentation
-  ## User Authentication <br>
+  ### User Authentication <br>
    - **Register** <br>
      &nbsp;&nbsp;**Endpoint:** /api/users/register<br>
      &nbsp;&nbsp;**Method:** POST<br>
@@ -86,7 +86,7 @@ Book Management System API
          &nbsp;&nbsp;&nbsp;&nbsp;"token": "JWT token" <br>
       &nbsp;&nbsp;} <br>
 
-## Books CRUD Operations (Secured with JWT)
+### Books CRUD Operations (Secured with JWT)
    - **Create** <br>
       &nbsp;&nbsp;**Endpoint:** /api/books <br>
       &nbsp;&nbsp;**Method:** POST <br>
