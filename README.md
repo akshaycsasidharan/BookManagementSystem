@@ -56,7 +56,7 @@
 
 ## API Documentation
  ## User Authentication <br>
-   &bull**Register** <br>
+   +**Register** <br>
      &nbsp;&nbsp;**Endpoint:** /api/users/register<br>
      &nbsp;&nbsp;**Method:** POST<br>
      &nbsp;&nbsp;**Request Body:** <br>
