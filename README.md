@@ -56,7 +56,7 @@
 
 ## API Documentation
  ## User Authentication <br>
-   #Register <br>
+   Register <br>
       Endpoint: /api/users/register<br>
       Method: POST<br>
       Request Body: <br>
@@ -64,14 +64,15 @@
         "username": "string", <br>
         "password": "string", <br>
         "email": "string" <br>
-      } <br>
+      }
+      <br>
       Response: <br>
       { <br>
         "message": "User registered successfully", <br>
         "token": "JWT token" <br>
-      } 
+      }  <br>
 
-   #Login 
+   Login  <br>
       Endpoint: /api/users/login<br>
       Method: POST<br>
       Request Body:<br>
@@ -86,7 +87,7 @@
       } <br>
 
 ## Books CRUD Operations (Secured with JWT)
-   ##Create
+   Create <br>
       Endpoint: /api/books <br>
       Method: POST <br>
       Request Headers: <br>
@@ -105,8 +106,8 @@
         "book": { ... } <br>
       } <br>
 
-   ##Read
-      Get all books
+   Read <br>
+      Get all books <br>
       <br>
       Endpoint: /api/books<br>
       Method: GET<br>
@@ -114,37 +115,37 @@
       Authorization: Bearer JWT token
       Response:
       <br>
-      {
-        "books": [ ... ]
-      }
+      { <br>
+        "books": [ ... ] <br>
+      } <br>
    
-   ##Get a book by ID
+   Get a book by ID <br>
       Endpoint: /api/books/:id<br>
       Method: GET<br>
-      Request Headers:
-      <br>
-      Authorization: Bearer JWT token
+      Request Headers: <br>
+      Authorization: Bearer JWT token <br>
       Response:
       <br>
-      {
-        "book": { ... }
-      }
+      { <br>
+        "book": { ... } <br>
+      } <br>
       
-   ##Search books by title or author
+   Search books by title or author <br>
+    <br>
       Endpoint: /api/books/search<br>
       Method: GET<br>
       Request Headers:<br>
-      Authorization: Bearer JWT token
+      Authorization: Bearer JWT token <br>
       Query Parameters:
       <br>
       query: searchTerm<br>
-      Response:
+      Response: 
       <br>
-      {
-        "books": [ ... ]
-      }
+      { <br>
+        "books": [ ... ] <br>
+      } <br>
    
-   ##Update
+   Update <br>
       Endpoint: /api/books/:id<br>
       Method: PUT<br>
       Request Headers:
@@ -164,7 +165,7 @@
         "book": { ... } <br>
       } <br>
    
-   ##Delete
+   Delete <br>
       Endpoint: /api/books/:id <br>
       Method: DELETE <br>
       Request Headers: <br>
