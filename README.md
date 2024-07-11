@@ -34,20 +34,20 @@
    npm start
 
 ## How to Use the Project
-   **Register a new user:**
-     Send a POST request to /api/users/register with the following JSON body:
+   &nbsp;&nbsp;Register a new user:<br>
+   &nbsp;&nbsp;Send a POST request to /api/users/register with the following JSON body:
    <br>
    { <br>
-     **"username":** "your_username", <br>
-     **"password":** "your_password",** <br>
-     **"email":** "your_email"** <br>
+     &nbsp;&nbsp;"username": "your_username", <br>
+      &nbsp;&nbsp;"password": "your_password", <br>
+      &nbsp;&nbsp;"email": "your_email" <br>
    } <br>
 
    **Login as an existing user:** <br>
      Send a POST request to /api/users/login with the following JSON body: <br>
    { <br>
-     **"username":** "your_username", <br>
-     **"password":** "your_password" <br>
+      &nbsp;&nbsp;"username": "your_username", <br>
+      &nbsp;&nbsp;"password": "your_password" <br>
    } <br>
    This will return a JWT token to be used for authenticated requests. <br>
 
