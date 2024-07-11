@@ -34,7 +34,7 @@
    npm start
 
 ## How to Use the Project
-   &nbsp;&nbsp;Register a new user:<br>
+   Register a new user:<br>
    &nbsp;&nbsp;Send a POST request to /api/users/register with the following JSON body:
    <br>
    { <br>
@@ -44,7 +44,7 @@
    } <br>
 
    **Login as an existing user:** <br>
-     Send a POST request to /api/users/login with the following JSON body: <br>
+      &nbsp;&nbsp;Send a POST request to /api/users/login with the following JSON body: <br>
    { <br>
       &nbsp;&nbsp;"username": "your_username", <br>
       &nbsp;&nbsp;"password": "your_password" <br>
@@ -52,7 +52,7 @@
    This will return a JWT token to be used for authenticated requests. <br>
 
   Authenticated Requests: <br>
-  Include the JWT token in the Authorization header of your requests, prefixed with Bearer . <br>
+   &nbsp;&nbsp;Include the JWT token in the Authorization header of your requests, prefixed with Bearer . <br>
 
 ## API Documentation
  ## User Authentication <br>
