@@ -52,7 +52,7 @@ Book Management System API
    &nbsp;&nbsp;This will return a JWT token to be used for authenticated requests. <br>
 
   Authenticated Requests: <br>
-   &nbsp;&nbsp;Include the JWT token in the Authorization header of your requests, prefixed with Bearer . <br>
+  Include the JWT token in the Authorization header of your requests, prefixed with Bearer . <br>
 
 ## API Documentation
   ## User Authentication <br>
