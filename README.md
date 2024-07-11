@@ -18,7 +18,7 @@ Book Management System API
 
 ## How to Install and Run the Project
  **Clone the repository:** 
-  git clone https://github.com/yourusername/BookManagementSystem.git
+  git clone (https://github.com/akshaycsasidharan/BookManagementSystem)<br>
   cd BookManagementSystem
 
 ## Install the dependencies:
