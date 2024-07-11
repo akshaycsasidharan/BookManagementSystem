@@ -2,10 +2,10 @@
 
 
 ## Project Title
-   Book Management System API
+&nbsp;Book Management System API
 
 ## Project Description
-   This project is a RESTful API server that allows authenticated users to manage a collection of books. The API supports CRUD (Create, Read, Update, Delete) operations on books, search functionality by book        title or author, and user authentication via registration and login. It is built using Node.js, Express, MongoDB, and JWT tokens.
+   This project is a RESTful API server that allows authenticated users to manage a collection of books. The API supports CRUD (Create, Read, Update, Delete) operations on books, search functionality by book title or author, and user authentication via registration and login. It is built using Node.js, Express, MongoDB, and JWT tokens.
 
 ## Table of Contents
 1. [Project Title](#project-title)
@@ -43,7 +43,7 @@
       &nbsp;&nbsp;&nbsp;&nbsp;"email": "your_email" <br>
      &nbsp;&nbsp;} <br>
 
-   - **Login as an existing user:** <br>
+- **Login as an existing user:** <br>
       &nbsp;&nbsp;Send a POST request to /api/users/login with the following JSON body: <br>
      &nbsp;&nbsp;{ <br>
       &nbsp;&nbsp;&nbsp;&nbsp;"username": "your_username", <br>
@@ -55,7 +55,7 @@
    &nbsp;&nbsp;Include the JWT token in the Authorization header of your requests, prefixed with Bearer . <br>
 
 ## API Documentation
- ## User Authentication <br>
+  ##User Authentication <br>
    - **Register** <br>
      &nbsp;&nbsp;**Endpoint:** /api/users/register<br>
      &nbsp;&nbsp;**Method:** POST<br>
