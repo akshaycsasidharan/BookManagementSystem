@@ -1,116 +1,113 @@
-Book Management System API
-Project Title
-Book Management System API
+# Book Management System API
 
-Project Description
-This project is a RESTful API server that allows authenticated users to manage a collection of books. The API supports CRUD (Create, Read, Update, Delete) operations on books, search functionality by book title or author, and user authentication via registration and login. It is built using Node.js, Express, MongoDB, and JWT tokens.
 
-Table of Contents
- 1.Project Title
- 2.Project Description
- 3.Table of Contents
- 4.How to Install and Run the Project
- 5.How to Use the Project
- 6.API Documentation
+## Project Title
+   Book Management System API
 
-How to Install and Run the Project
-Clone the repository:
-git clone https://github.com/yourusername/BookManagementSystem.git
-cd BookManagementSystem
+## Project Description
+   This project is a RESTful API server that allows authenticated users to manage a collection of books. The API supports CRUD (Create, Read, Update, Delete) operations on books, search functionality by book        title or author, and user authentication via registration and login. It is built using Node.js, Express, MongoDB, and JWT tokens.
 
-Install the dependencies:
-npm install
+## Table of Contents
+1. [Project Title](#project-title)
+2. [Project Description](#project-description)
+3. [Table of Contents](#table-of-contents)
+4. [How to Install and Run the Project](#how-to-install-and-run-the-project)
+5. [How to Use the Project](#how-to-use-the-project)
+6. [API Documentation](#api-documentation)
 
-Set up environment variables:
-Create a .env file in the root directory and add the following environment variables:<br>
-MONGO_URI=your_mongodb_uri<br>
-JWT_SECRET=your_jwt_secret<br>
 
-Run the project:
-npm start
+## How to Install and Run the Project
+1. **Clone the repository:** 
+  git clone https://github.com/yourusername/BookManagementSystem.git
+  cd BookManagementSystem
 
-How to Use the Project
-Register a new user:
-Send a POST request to /api/users/register with the following JSON body:
-<br>
-{
-  "username": "your_username",
-  "password": "your_password",
-  "email": "your_email"
-}
+## Install the dependencies:
+  npm install
 
-Login as an existing user:
-Send a POST request to /api/users/login with the following JSON body:
-<br>
-{
-  "username": "your_username",
-  "password": "your_password"
-}
-This will return a JWT token to be used for authenticated requests.
+## Set up environment variables:
+  Create a .env file in the root directory and add the following environment variables:<br>
+  MONGO_URI=your_mongodb_uri <br>
+  DB=your_database_name <br>
+  JWT_SECRET=your_jwt_secret
 
-Authenticated Requests:
-Include the JWT token in the Authorization header of your requests, prefixed with Bearer .
+## Run the project:
+   npm start
 
-API Documentation
-User Authentication
-Register
+## How to Use the Project
+   Register a new user:
+   Send a POST request to /api/users/register with the following JSON body:
+   <br>
+   { <br>
+     "username": "your_username", <br>
+     "password": "your_password", <br>
+     "email": "your_email" <br>
+   } <br>
 
+   Login as an existing user: <br>
+   Send a POST request to /api/users/login with the following JSON body: <br>
+   { <br>
+     "username": "your_username", <br>
+     "password": "your_password" <br>
+   } <br>
+   This will return a JWT token to be used for authenticated requests. <br>
+
+  Authenticated Requests: <br>
+  Include the JWT token in the Authorization header of your requests, prefixed with Bearer . <br>
+
+## API Documentation
+User Authentication <br>
+Register <br>
 Endpoint: /api/users/register<br>
 Method: POST<br>
-Request Body:
-<br>
-{
-  "username": "string",
-  "password": "string",
-  "email": "string"
-}
-Response:
-<br>
-{
-  "message": "User registered successfully",
-  "token": "JWT token"
-}
-Login
+Request Body: <br>
+{ <br>
+  "username": "string", <br>
+  "password": "string", <br>
+  "email": "string" <br>
+} <br>
+Response: <br>
+{ <br>
+  "message": "User registered successfully", <br>
+  "token": "JWT token" <br>
+} 
 
+Login 
 Endpoint: /api/users/login<br>
 Method: POST<br>
 Request Body:<br>
 
-{
-  "username": "string",
-  "password": "string"
-}
-Response:
-<br>
-{
-  "message": "Login successfully",
-  "token": "JWT token"
-}
-Books CRUD Operations (Secured with JWT)
-Create
+{ <br>
+  "username": "string", <br>
+  "password": "string" <br>
+} <br>
+Response: <br>
+{ <br>
+  "message": "Login successfully", <br>
+  "token": "JWT token" <br>
+} <br>
 
-Endpoint: /api/books
-Method: POST
-Request Headers:
-makefile
-Copy code
-Authorization: Bearer JWT token
-Request Body:
-<br>
-{
-  "Title": "string",
-  "Author": "string",
-  "Genre": "string",
-  "PublishedYear": "number",
-  "Requirements": "string"
-}
-Response:
-<br>
-{
-  "message": "Book created successfully",
-  "book": { ... }
-}
-Read
+## Books CRUD Operations (Secured with JWT)
+##Create
+
+Endpoint: /api/books <br>
+Method: POST <br>
+Request Headers: <br>
+Authorization: Bearer JWT token <br>
+Request Body: <br>
+{ <br>
+  "Title": "string", <br>
+  "Author": "string", <br>
+  "Genre": "string", <br>
+  "PublishedYear": "number", <br>
+  "Requirements": "string" <br>
+} <br>
+Response: <br>
+{ <br>
+  "message": "Book created successfully", <br>
+  "book": { ... } <br>
+} <br>
+
+##Read
 
 Get all books
 <br>
