@@ -34,7 +34,7 @@
   npm start
 
 ## How to Use the Project
-   ***Register a new user:**<br>
+- **Register a new user:**<br>
    &nbsp;&nbsp;Send a POST request to /api/users/register with the following JSON body:
    <br>
      &nbsp;&nbsp;{ <br>
@@ -43,7 +43,7 @@
       &nbsp;&nbsp;&nbsp;&nbsp;"email": "your_email" <br>
      &nbsp;&nbsp;} <br>
 
-   &bull**Login as an existing user:** <br>
+   - **Login as an existing user:** <br>
       &nbsp;&nbsp;Send a POST request to /api/users/login with the following JSON body: <br>
      &nbsp;&nbsp;{ <br>
       &nbsp;&nbsp;&nbsp;&nbsp;"username": "your_username", <br>
@@ -56,7 +56,7 @@
 
 ## API Documentation
  ## User Authentication <br>
-   +**Register** <br>
+   - **Register** <br>
      &nbsp;&nbsp;**Endpoint:** /api/users/register<br>
      &nbsp;&nbsp;**Method:** POST<br>
      &nbsp;&nbsp;**Request Body:** <br>
@@ -72,7 +72,7 @@
          &nbsp;&nbsp;&nbsp;&nbsp;"token": "JWT token" <br>
       &nbsp;&nbsp;}  <br>
 
-   &bull**Login**  <br>
+   - **Login**  <br>
       &nbsp;&nbsp;**Endpoint:** /api/users/login<br>
       &nbsp;&nbsp;**Method:** POST<br>
       &nbsp;&nbsp;**Request Body:**<br>
@@ -87,7 +87,7 @@
       &nbsp;&nbsp;} <br>
 
 ## Books CRUD Operations (Secured with JWT)
-   &bull**Create** <br>
+   - **Create** <br>
       &nbsp;&nbsp;**Endpoint:** /api/books <br>
       &nbsp;&nbsp;**Method:** POST <br>
      &nbsp;&nbsp;**Request Headers:** <br>
@@ -106,7 +106,7 @@
          &nbsp;&nbsp;&nbsp;&nbsp;"book": { ... } <br>
       &nbsp;&nbsp;} <br>
 
-   &bull**Read** <br>
+   - **Read** <br>
       &nbsp;&nbsp;**Get all books** <br>
       <br>
       &nbsp;&nbsp;**Endpoint:** /api/books<br>
@@ -119,7 +119,7 @@
          &nbsp;&nbsp;&nbsp;&nbsp;"books": [ ... ] <br>
       &nbsp;&nbsp;} <br>
    
-   &bull**Get a book by ID** <br>
+   - **Get a book by ID** <br>
       &nbsp;&nbsp;**Endpoint:** /api/books/:id<br>
       &nbsp;&nbsp;**Method:** GET<br>
       &nbsp;&nbsp;**Request Headers:** <br>
@@ -130,7 +130,7 @@
          &nbsp;&nbsp;&nbsp;&nbsp;"book": { ... } <br>
       &nbsp;&nbsp;} <br>
       
-   &bull**Search books by title or author** <br>
+   - **Search books by title or author** <br>
     <br>
       &nbsp;&nbsp;**Endpoint:** /api/books/search<br>
       &nbsp;&nbsp;**Method:** GET<br>
@@ -145,7 +145,7 @@
          &nbsp;&nbsp;&nbsp;&nbsp;"books": [ ... ] <br>
       &nbsp;&nbsp;} <br>
    
-   &bull**Update** <br>
+   - **Update** <br>
       &nbsp;&nbsp;**Endpoint:** /api/books/:id<br>
       &nbsp;&nbsp;**Method:** PUT<br>
       &nbsp;&nbsp;**Request Headers:**
@@ -165,7 +165,7 @@
          &nbsp;&nbsp;&nbsp;&nbsp;"book": { ... } <br>
       &nbsp;&nbsp;} <br>
    
-   &bull**Delete** <br>
+   - **Delete** <br>
       &nbsp;&nbsp;**Endpoint:** /api/books/:id <br>
       &nbsp;&nbsp;**Method:** DELETE <br>
       &nbsp;&nbsp;**Request Headers:** <br>
