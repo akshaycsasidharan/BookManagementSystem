@@ -108,7 +108,6 @@ Book Management System API
 
    - **Read** <br>
       &nbsp;&nbsp;**Get all books** <br>
-      <br>
       &nbsp;&nbsp;**Endpoint:** /api/books<br>
       &nbsp;&nbsp;**Method:** GET<br>
       &nbsp;&nbsp;**Request Headers:**<br>
