@@ -34,10 +34,10 @@
    npm start
 
 ## How to Use the Project
-   Register a new user:
-   Send a POST request to /api/users/register with the following JSON body:
+   1.Register a new user:
+      Send a POST request to /api/users/register with the following JSON body:
    <br>
-   { <br>
+   { 
      "username": "your_username", <br>
      "password": "your_password", <br>
      "email": "your_email" <br>
